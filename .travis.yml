@@ -6,7 +6,7 @@ services:
  -docker
 
 before_install:
-   - echo $DOCKER_PASSWORD | docker login elmer1788 $DOCKER_USERNAME Panama.1788
+   - echo $DOCKER_PASSWORD | docker login elmer1788 $DOCKER_USERNAME --password-stdin
 
 before_script: pip install docker-compose 
 
